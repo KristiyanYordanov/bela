@@ -1,0 +1,372 @@
+Warning: JAVA_HOME environment variable is not set.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bela 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ bela ---
+[INFO] Deleting /Users/nikolayrusev/Downloads/bela/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bela ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ bela ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/nikolayrusev/Downloads/bela/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bela ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/nikolayrusev/Downloads/bela/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ bela ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bela ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.4:war (default-war) @ bela ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [bela] in [/Users/nikolayrusev/Downloads/bela/target/bela-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/Users/nikolayrusev/Downloads/bela/src/main/webapp]
+[INFO] Webapp assembled in [72 msecs]
+[INFO] Building war: /Users/nikolayrusev/Downloads/bela/target/bela-0.0.1-SNAPSHOT.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ bela ---
+[INFO] Installing /Users/nikolayrusev/Downloads/bela/target/bela-0.0.1-SNAPSHOT.war to /Users/nikolayrusev/.m2/repository/com/krissoft/bela/0.0.1-SNAPSHOT/bela-0.0.1-SNAPSHOT.war
+[INFO] Installing /Users/nikolayrusev/Downloads/bela/pom.xml to /Users/nikolayrusev/.m2/repository/com/krissoft/bela/0.0.1-SNAPSHOT/bela-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] >>> tomcat-maven-plugin:1.1:run (default-cli) @ bela >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bela ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ bela ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/nikolayrusev/Downloads/bela/target/classes
+[INFO] 
+[INFO] <<< tomcat-maven-plugin:1.1:run (default-cli) @ bela <<<
+[INFO] 
+[INFO] --- tomcat-maven-plugin:1.1:run (default-cli) @ bela ---
+[INFO] Running war on http://localhost:8080/bela
+[INFO] Creating Tomcat server configuration at /Users/nikolayrusev/Downloads/bela/target/tomcat
+2015-08-26 11:19:31 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:174 - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2015-08-26 11:19:31 INFO  XmlWebApplicationContext:573 - Refreshing Root WebApplicationContext: startup date [Wed Aug 26 11:19:31 EEST 2015]; root of context hierarchy
+2015-08-26 11:19:31 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2015-08-26 11:19:31 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/spring-security.xml]
+2015-08-26 11:19:31 INFO  SpringSecurityCoreVersion:49 - You are running with Spring Security Core 3.2.3.RELEASE
+2015-08-26 11:19:31 INFO  SecurityNamespaceHandler:75 - Spring Security 'config' module version is 3.2.3.RELEASE
+2015-08-26 11:19:31 INFO  FilterInvocationSecurityMetadataSourceParser:134 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /admin/**
+2015-08-26 11:19:31 INFO  FilterInvocationSecurityMetadataSourceParser:134 - Creating access control expression attribute 'hasRole('ROLE_USER')' for /user/**
+2015-08-26 11:19:31 INFO  FilterInvocationSecurityMetadataSourceParser:134 - Creating access control expression attribute 'hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')' for /**
+2015-08-26 11:19:31 INFO  HttpSecurityBeanDefinitionParser:266 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.session.ConcurrentSessionFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1100, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300]
+2015-08-26 11:19:31 INFO  GlobalMethodSecurityBeanDefinitionParser:182 - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+2015-08-26 11:19:31 DEBUG XmlWebApplicationContext:607 - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@741741d0: defining beans [org.springframework.security.filterChains,org.springframework.security.filterChainProxy,org.springframework.security.web.DefaultSecurityFilterChain#0,org.springframework.security.web.DefaultSecurityFilterChain#1,org.springframework.security.web.DefaultSecurityFilterChain#2,org.springframework.security.web.DefaultSecurityFilterChain#3,org.springframework.security.web.DefaultSecurityFilterChain#4,org.springframework.security.web.DefaultSecurityFilterChain#5,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.PortResolverImpl#0,org.springframework.security.config.authentication.AuthenticationManagerFactoryBean#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.core.session.SessionRegistryImpl#0,org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.userDetailsServiceFactory,org.springframework.security.web.DefaultSecurityFilterChain#6,org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#1,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,org.springframework.aop.config.internalAutoProxyCreator,bcryptEncoder,org.springframework.security.provisioning.InMemoryUserDetailsManager#0,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager]; root of factory hierarchy
+2015-08-26 11:19:31 DEBUG XmlWebApplicationContext:713 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@b14b60a]
+2015-08-26 11:19:31 DEBUG XmlWebApplicationContext:737 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4fa86cb8]
+2015-08-26 11:19:31 INFO  DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/login*'], []
+2015-08-26 11:19:31 INFO  DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/resources/**'], []
+2015-08-26 11:19:31 INFO  DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/register'], []
+2015-08-26 11:19:31 INFO  DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/accessdenied'], []
+2015-08-26 11:19:31 INFO  DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/error404'], []
+2015-08-26 11:19:31 INFO  DefaultSecurityFilterChain:28 - Creating filter chain: Ant [pattern='/error500'], []
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:31 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 INFO  DefaultSecurityFilterChain:28 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@b022551, org.springframework.security.web.session.ConcurrentSessionFilter@3e14d390, org.springframework.security.web.authentication.logout.LogoutFilter@5eb87338, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b999ee8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31ab1e67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29bbc391, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3487442d, org.springframework.security.web.session.SessionManagementFilter@530ee28b, org.springframework.security.web.access.ExceptionTranslationFilter@3a3f96ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4def7d36]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 INFO  DefaultFilterChainValidator:124 - Checking whether login URL '/login' is accessible with your configuration
+2015-08-26 11:19:32 DEBUG XmlWebApplicationContext:764 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@29bbc63c]
+2015-08-26 11:19:32 DEBUG ContextLoader:342 - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2015-08-26 11:19:32 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 1044 ms
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 DEBUG DelegatingFilterProxy:177 - Initializing filter 'springSecurityFilterChain'
+2015-08-26 11:19:32 DEBUG DelegatingFilterProxy:202 - Filter 'springSecurityFilterChain' configured successfully
+2015-08-26 11:19:32 DEBUG DispatcherServlet:118 - Initializing servlet 'appServlet'
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-08-26 11:19:32 INFO  DispatcherServlet:488 - FrameworkServlet 'appServlet': initialization started
+2015-08-26 11:19:32 DEBUG DispatcherServlet:616 - Servlet with name 'appServlet' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Wed Aug 26 11:19:31 EEST 2015]; root of context hierarchy]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:174 - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2015-08-26 11:19:32 DEBUG StandardServletEnvironment:174 - Replacing [servletConfigInitParams] PropertySource with [servletConfigInitParams]
+2015-08-26 11:19:32 INFO  XmlWebApplicationContext:573 - Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:32 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+2015-08-26 11:19:32 INFO  SecurityNamespaceHandler:75 - Spring Security 'config' module version is 3.2.3.RELEASE
+2015-08-26 11:19:32 INFO  GlobalMethodSecurityBeanDefinitionParser:182 - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+2015-08-26 11:19:32 DEBUG XmlWebApplicationContext:607 - Bean factory for WebApplicationContext for namespace 'appServlet-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@2d70f312: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,mvcCorsConfigurations,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,applicationContext,authenticationEventListener,homeController,springMongoConfig,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,org.springframework.aop.config.internalAutoProxyCreator]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@741741d0
+2015-08-26 11:19:32 INFO  DefaultListableBeanFactory:839 - Overriding bean definition for bean 'mvcContentNegotiationManager' with a different definition: replacing [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcContentNegotiationManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2015-08-26 11:19:32 INFO  DefaultListableBeanFactory:839 - Overriding bean definition for bean 'mvcResourceUrlProvider' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.resource.ResourceUrlProvider]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcResourceUrlProvider; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2015-08-26 11:19:32 INFO  DefaultListableBeanFactory:839 - Overriding bean definition for bean 'mvcPathMatcher' with a different definition: replacing [Root bean: class [org.springframework.util.AntPathMatcher]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcPathMatcher; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2015-08-26 11:19:32 INFO  DefaultListableBeanFactory:839 - Overriding bean definition for bean 'mvcUrlPathHelper' with a different definition: replacing [Root bean: class [org.springframework.web.util.UrlPathHelper]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcUrlPathHelper; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2015-08-26 11:19:32 INFO  ConfigurationClassBeanDefinitionReader:298 - Skipping bean definition for [BeanMethod:name=mvcUriComponentsContributor,declaringClass=org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport]: a definition for bean 'mvcUriComponentsContributor' already exists. This top-level bean definition is considered as an override.
+2015-08-26 11:19:32 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-08-26 11:19:32 DEBUG XmlWebApplicationContext:713 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@16bbaab3]
+2015-08-26 11:19:32 DEBUG XmlWebApplicationContext:737 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@fe42a09]
+2015-08-26 11:19:32 DEBUG RequestMappingHandlerMapping:175 - Looking for request mappings in application context: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/register],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.register(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/user/userList],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.userList(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.printWelcome(org.springframework.ui.ModelMap,java.security.Principal)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/home1],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.home1(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/accessdenied],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.accessdenied(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.login(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/admin/adminList],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.adminList(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/error500],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.error500(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/error404],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.error404(org.springframework.ui.ModelMap)
+2015-08-26 11:19:32 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.home(org.springframework.ui.ModelMap,java.security.Principal)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 DEBUG ExceptionHandlerExceptionResolver:257 - Looking for exception mappings: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcCorsConfigurations': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#1': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcPathMatcher': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationContext': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'authenticationEventListener': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'homeController': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'springMongoConfig': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.vote.AffirmativeBased#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.methodSecurityMetadataSourceAdvisor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcConversionService': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcValidator': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcViewResolver': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.scheduling.annotation.SchedulingConfiguration': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalScheduledAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'getInternalResourceViewResolver': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.data.mongodb.repository.config.MongoRepositoryConfigurationExtension#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mongoMappingContext': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mongoDbFactory': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mongoTemplate': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'environment': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2015-08-26 11:19:33 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2015-08-26 11:19:33 DEBUG RequestMappingHandlerMapping:175 - Looking for request mappings in application context: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/register],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.register(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/user/userList],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.userList(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.printWelcome(org.springframework.ui.ModelMap,java.security.Principal)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/home1],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.home1(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/accessdenied],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.accessdenied(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.login(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/admin/adminList],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.adminList(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/error500],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.error500(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/error404],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.error404(org.springframework.ui.ModelMap)
+2015-08-26 11:19:33 INFO  RequestMappingHandlerMapping:532 - Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.krissoft.bela.config.HomeController.home(org.springframework.ui.ModelMap,java.security.Principal)
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcCorsConfigurations': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#1': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcPathMatcher': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationContext': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'authenticationEventListener': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'homeController': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'springMongoConfig': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.vote.AffirmativeBased#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.security.methodSecurityMetadataSourceAdvisor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcConversionService': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcValidator': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcViewResolver': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.scheduling.annotation.SchedulingConfiguration': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalScheduledAnnotationProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'getInternalResourceViewResolver': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.data.mongodb.repository.config.MongoRepositoryConfigurationExtension#0': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mongoMappingContext': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mongoDbFactory': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mongoTemplate': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'environment': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+2015-08-26 11:19:33 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2015-08-26 11:19:33 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2015-08-26 11:19:33 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 DEBUG ExceptionHandlerExceptionResolver:257 - Looking for exception mappings: WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:19:33 INFO  cluster:71 - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2015-08-26 11:19:33 INFO  cluster:76 - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2015-08-26 11:19:33 DEBUG XmlWebApplicationContext:764 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@5a90fcaa]
+2015-08-26 11:19:33 DEBUG DispatcherServlet:506 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2015-08-26 11:19:33 DEBUG DispatcherServlet:528 - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@356341c9]
+2015-08-26 11:19:33 DEBUG DispatcherServlet:550 - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@3cbfdf5c]
+2015-08-26 11:19:33 DEBUG DispatcherServlet:688 - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6dc2279c]
+2015-08-26 11:19:33 DEBUG DispatcherServlet:750 - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@3fc1abf]
+2015-08-26 11:19:33 DEBUG ResourceUrlProvider:140 - Looking for resource handler mappings
+2015-08-26 11:19:33 DEBUG ResourceUrlProvider:152 - Found resource handler mapping: URL pattern="/resources/**", locations=[ServletContext resource [/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@1e5aacd9]
+2015-08-26 11:19:33 DEBUG ResourceUrlProvider:140 - Looking for resource handler mappings
+2015-08-26 11:19:33 DEBUG ResourceUrlProvider:152 - Found resource handler mapping: URL pattern="/resources/**", locations=[ServletContext resource [/resources/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@1e5aacd9]
+2015-08-26 11:19:33 DEBUG DispatcherServlet:567 - Published WebApplicationContext of servlet 'appServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.appServlet]
+2015-08-26 11:19:33 INFO  DispatcherServlet:507 - FrameworkServlet 'appServlet': initialization completed in 1296 ms
+2015-08-26 11:19:33 DEBUG DispatcherServlet:139 - Servlet 'appServlet' configured successfully
+2015-08-26 11:20:23 INFO  XmlWebApplicationContext:951 - Closing WebApplicationContext for namespace 'appServlet-servlet': startup date [Wed Aug 26 11:19:32 EEST 2015]; parent: Root WebApplicationContext
+2015-08-26 11:20:23 INFO  XmlWebApplicationContext:951 - Closing Root WebApplicationContext: startup date [Wed Aug 26 11:19:31 EEST 2015]; root of context hierarchy

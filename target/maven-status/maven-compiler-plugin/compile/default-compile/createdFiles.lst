@@ -1,0 +1,5 @@
+com\krissoft\bela\config\ApplicationContext.class
+com\krissoft\bela\config\AuthenticationEventListener.class
+com\krissoft\bela\config\HomeController.class
+com\krissoft\bela\config\SpringMongoConfig.class
+com\krissoft\bela\App.class
