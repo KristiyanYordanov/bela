@@ -4,6 +4,7 @@ import java.security.Principal;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -15,13 +16,27 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory
+			.getLogger(HomeController.class);
+
+	@Autowired
+	BalanceSheetModelImpl balanceSheetModelImpl;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model, Principal principal) {
 		String name = principal.getName();
 		model.addAttribute("username", name);
 		logger.info("printWelcome method, Principal name:" + name);
+		BalanceSheet balanceSheet =  new BalanceSheet();
+		balanceSheet.setId(1l);
+		balanceSheet.setName("kris");
+		balanceSheetModelImpl.saveBalanceSheet(balanceSheet);
+		
+		balanceSheet.setId(2l);
+		balanceSheet.setName("kris1");
+		balanceSheetModelImpl.saveBalanceSheet(balanceSheet);
+		logger.info("size:" + balanceSheetModelImpl.getBalanceSheet().size());
+
 		return "home";
 	}
 

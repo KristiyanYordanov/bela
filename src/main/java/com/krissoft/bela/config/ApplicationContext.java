@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = "com.krissoft.bela")
+@ComponentScan(basePackages = "com.krissoft.bela.config")
 @EnableWebMvc
 @EnableScheduling
 @EnableMongoRepositories(basePackages = "com.krissoft.bela")

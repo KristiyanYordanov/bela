@@ -146,6 +146,11 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>3.0.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
 
 		<!-- Logging -->
 		<dependency>
@@ -180,8 +185,7 @@
 		<org.springframework.security.version>3.2.3.RELEASE</org.springframework.security.version>
 
 		<!-- persistence -->
-		<hibernate.version>4.3.5.Final</hibernate.version>
-		<mysql-connector-java.version>5.1.29</mysql-connector-java.version>
+		<hibernate.version>5.0.0.Final</hibernate.version>
 
 		<!-- logging -->
 		<org.slf4j.version>1.7.6</org.slf4j.version>
