@@ -19,24 +19,23 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableMongoRepositories(basePackages = "com.krissoft.bela")
 public class ApplicationContext extends WebMvcConfigurerAdapter {
 
-	@Autowired
-	private Environment env;
+    @Autowired
+    private Environment env;
 
-	public ApplicationContext() {
-		super();
-	}
+    public ApplicationContext() {
+        super();
+    }
 
-	@Override
-	public void configureDefaultServletHandling(
-			DefaultServletHandlerConfigurer configurer) {
-		configurer.enable();
-	}
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        configurer.enable();
+    }
 
-	@Bean
-	public InternalResourceViewResolver getInternalResourceViewResolver() {
-		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/views/");
-		resolver.setSuffix(".jsp");
-		return resolver;
-	}
+    @Bean
+    public InternalResourceViewResolver getInternalResourceViewResolver() {
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setSuffix(".jsp");
+        return resolver;
+    }
 }

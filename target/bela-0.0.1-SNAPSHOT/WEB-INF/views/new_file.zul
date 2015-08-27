@@ -1,0 +1,20 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<grid title="new page title" border="normal" vflex="1"
+		model="@bind(vm.balanceSheetList)" apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('com.krissoft.bela.config.BalanceSheetViewModel')">
+
+		<columns>
+			<column label="ID" />
+			<column label="Name" />
+		</columns>
+		<template name="model">
+			<row>
+				<label value="@load(each.id)" />
+				<label value="@load(each.name)" />
+			</row>
+		</template>
+
+
+	</grid>
+</zk>

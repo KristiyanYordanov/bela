@@ -26,16 +26,18 @@ public class HomeController {
         model.addAttribute("username", name);
         logger.info("printWelcome method, Principal name:" + name);
         BalanceSheet balanceSheet = new BalanceSheet();
-        balanceSheet.setId(1l);
-        balanceSheet.setName("kris");
+        balanceSheet.setId(11l);
+        balanceSheet.setName("kris2");
         balanceSheetModel.saveBalanceSheet(balanceSheet);
 
-        balanceSheet.setId(2l);
-        balanceSheet.setName("kris1");
+        balanceSheet.setId(22l);
+        balanceSheet.setName("kris21");
         balanceSheetModel.saveBalanceSheet(balanceSheet);
         logger.info("size:" + balanceSheetModel.getBalanceSheet().size());
+        System.out.println("size:" + balanceSheetModel.getBalanceSheet().size());
 
-        return "home";
+        model.addAttribute("balanceSheetList", balanceSheetModel.getBalanceSheet());
+        return "new_file.zul";
     }
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
@@ -47,6 +49,17 @@ public class HomeController {
         }
 
         try {
+
+            BalanceSheet balanceSheet = new BalanceSheet();
+            balanceSheet.setId(13l);
+            balanceSheet.setName("kris3");
+            balanceSheetModel.saveBalanceSheet(balanceSheet);
+
+            balanceSheet.setId(23l);
+            balanceSheet.setName("kris13");
+            balanceSheetModel.saveBalanceSheet(balanceSheet);
+            logger.info("size:" + balanceSheetModel.getBalanceSheet().size());
+
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
             Object custom = (Object) authentication == null ? null : authentication.getPrincipal();
             model.addAttribute("username", name);
@@ -58,7 +71,9 @@ public class HomeController {
             }
         }
 
-        return "home";
+        model.addAttribute("balanceSheetList", balanceSheetModel.getBalanceSheet());
+        return "new_file.zul";
+
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")

@@ -48,6 +48,27 @@
 	</build>
 
 	<dependencies>
+		<!-- ZK -->
+
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zk</artifactId>
+			<version>8.0.0-RC</version>
+		</dependency>
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zul</artifactId>
+			<version>8.0.0-RC</version>
+		</dependency>
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zkbind</artifactId>
+			<version>8.0.0-RC</version>
+		</dependency>
+
+
+
+
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -132,6 +153,12 @@
 
 
 
+		<!-- Test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
 
 
 
