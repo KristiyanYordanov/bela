@@ -41,3 +41,13 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.prefs
+target/bela-0.0.1-SNAPSHOT.war
+*.class
+*.jar
+*.war
+*.prefs
+myappbela.log
+*.lst
+*.class
+*.war
